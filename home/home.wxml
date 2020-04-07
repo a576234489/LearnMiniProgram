@@ -1,3 +1,4 @@
 <!--home/home.wxml-->
 <text class="title">hellow world</text>
 <button>按钮</button>
+<view>知识点2</view>
