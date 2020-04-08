@@ -1,0 +1,7 @@
+<!--home/home.wxml-->
+<view>hello {{name}}</view>
+<view>我的年龄: {{age}}</view>
+<view wx:for = "{{students}}">{{item.name}} ==> {{item.age}}</view>
+<view>当前计数:{{counter}}</view>
+<button size="mini" bindtap="handleCounterAdd">+</button>
+<button size="mini" bindtap="handleCounterSubtraction">-</button>
