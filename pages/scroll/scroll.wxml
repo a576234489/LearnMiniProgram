@@ -1,0 +1,3 @@
+<scroll-view class="container1" scroll-x bindscroll="handleBindScroll">
+  <view wx:for="{{10}}" class="item1">{{item}}</view>
+</scroll-view>

@@ -1,0 +1,15 @@
+<input/>
+<!-- 默认值 -->
+<input value="哈哈哈"/>
+<!-- 文本输入键盘 -->
+<input type="text"/>
+<!-- 数字输入键盘 -->
+<input type="number"/>
+<!-- 生份证输入键盘 -->
+<input type="idcard"/>
+<!-- 带小数点数字输入键盘 -->
+<input type="digit"
+       bindinput="handleInput"
+       bindfocus="handleFocus"
+       bindblur="handleBlur"
+       />

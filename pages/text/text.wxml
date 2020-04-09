@@ -1,0 +1,14 @@
+<!--pages/text/text.wxml-->
+<text>hello world\n</text>
+<text>hello小程序\n</text>
+<!-- 长按选中 -->
+<text selectable>hello梁海新\n</text>
+<text>hello world\n</text>
+<!-- 默认 -->
+<text space="nbsp">hello world\n</text>
+<!-- 空格代表一个中文大小 -->
+<text space="emsp">hello world\n</text>
+<!-- 空格代表半个中文大小 -->
+<text space="ensp">hello world\n</text>
+<!-- 转码 -->
+<text decode>5 &gt; 3</text>
