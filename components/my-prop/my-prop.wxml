@@ -1,0 +1,2 @@
+<view class="title title-class">{{title}}</view>
+<view class="content">我是自定义内容</view>

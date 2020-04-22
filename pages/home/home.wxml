@@ -1,3 +1,16 @@
-<!--home/home.wxml-->
-<text class="title">hellow world</text>
-<button>按钮</button>
+<my-prop title="哈哈哈" title-class="red"/>
+<my-prop title="呵呵呵" title-class="green"/>
+<my-prop title-class="blue"/>
+<view>计数器:{{counter}}</view>
+<my-event bind:increment="handleIncrement"/>
+<x-tab-control titles="{{['衣服','裤子','鞋子']}}" bind:tabClick="handleTabClick"/>
+<my-sel id="my-sel"/>
+<button bind:tap="handleSelIncrement" size="mini">子组件自增</button>
+<my-slot>
+  <view>我是中间</view>
+</my-slot>
+<my-m-slot>
+  <view slot="slot2">哈哈哈</view>
+  <image slot="slot1" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587544941895&di=622c87b90dc508ce1ae43141bde54e39&imgtype=0&src=http%3A%2F%2Fbj.newsesf.leju.com%2Fnews%2Fhd%2F2016lh%2Fimages%2Fhot_foucs5.jpg"></image>
+  <slider slot="slot3"></slider>
+</my-m-slot>

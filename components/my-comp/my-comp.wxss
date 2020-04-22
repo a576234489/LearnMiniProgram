@@ -1,0 +1,9 @@
+/* components/my-comp/my-comp.wxss */
+.title {
+   font-size: 80rpx;
+   font-weight: 700;
+}
+.content {
+  font-size: 40rpx;
+  font-weight: 700;
+}

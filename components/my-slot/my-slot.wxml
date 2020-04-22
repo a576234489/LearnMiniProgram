@@ -1,0 +1,3 @@
+<view>我是上边</view>
+<slot></slot>
+<view>我是下边</view>

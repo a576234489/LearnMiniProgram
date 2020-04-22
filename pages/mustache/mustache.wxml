@@ -1,0 +1,12 @@
+<button bindtap="handleColor">切换颜色</button>
+<view class="box1 {{isActive ? 'active' : ''}}">梁海新</view>
+
+<import src="/templete/head.wxml"/>
+<template is="head" data="{{content:'头部内容'}}"></template>
+<view>{{nowTime}}</view>
+<button bindtap="handleAddScore" size="mini">加六分</button>
+<view wx:if = "{{score >= 90}}">优秀</view>
+<view wx:elif = "{{score >= 80}}">良好</view>
+<view wx:elif = "{{score >= 60}}">及格</view>
+<view wx:else>不及格</view>
+<view hidden>hidden</view>

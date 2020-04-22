@@ -3,3 +3,17 @@
   color: red;
   font-size: 50px;
 }
+.box {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: red;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.blue {
+  color: blue;
+}

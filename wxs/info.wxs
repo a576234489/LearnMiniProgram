@@ -1,0 +1,10 @@
+var content = "Hello World";
+var name = "梁海新"
+var sum = function(num1,num2){
+  return num1 + num2;
+}
+module.exports = {
+  content: content,
+  name: name,
+  sum: sum
+}

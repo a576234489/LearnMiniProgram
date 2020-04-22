@@ -1,0 +1,17 @@
+<wxs src="../../wxs/info.wxs" module="info"/>
+<!-- <wxs module="info">
+  var content = "Hello World";
+  var name = "梁海新"
+  var sum = function(num1,num2){
+    return num1 + num2;
+  }
+  module.exports = {
+    content: content,
+    name: name,
+    sum: sum
+  }
+</wxs> -->
+<wxs src="../../wxs/format.wxs" module="dataF"/>
+<view>{{info.name}}</view>
+<view>{{dataF.dataFormat(price,3)}}</view>
+<view>{{dataF.formatDate('2018333333')}}</view>

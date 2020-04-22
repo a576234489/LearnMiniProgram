@@ -5,62 +5,36 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    counter: 0
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handleIncrement(event){
+    console.log(event)
+    this.setData({
+      counter: this.data.counter + 1
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handleSelIncrement(){
+    let this_sel = this.selectComponent('#my-sel');
+    this_sel.incrementCounter(10)
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  
+  handleTabClick(event){
+    console.log(event)
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  bindtouchstart(){
+    console.log('bindtouchstart')
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  bindtouchmove(){
+    console.log('bindtouchmove')
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  bindtouchend(){
+    console.log('bindtouchend')
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  bindTap(){
+    console.log('bindTap')
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
+  bindlongpress(){
+    console.log('bindlongpress')
+  },
+  
 })

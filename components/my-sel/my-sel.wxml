@@ -1,0 +1,1 @@
+<view>自增计数器:{{counter}}</view>
