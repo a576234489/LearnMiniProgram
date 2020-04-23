@@ -1,3 +1,6 @@
-<!--home/home.wxml-->
-<text class="title">hellow world</text>
-<button>按钮</button>
+<button bind:tap="handleShowToast">showToast</button>
+<button bind:tap="handleShowModal">showModal</button>
+<button bind:tap="handleShowLoading">showLoading</button>
+<button bind:tap="handleShowActionSheet">showActionSheet</button>
+<button size="mini" open-type="share">分享</button>
+<view>{{token}}</view>

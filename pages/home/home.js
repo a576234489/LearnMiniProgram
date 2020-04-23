@@ -1,66 +1,50 @@
 // home/home.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  data(){
+    token: token
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handleShowToast(){
+    let token = getApp().globalData.token;
+    this.setData({
+      token: token
+    })
+    wx.showToast({
+      title: '成功啦',
+      icon: 'loading'
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handleShowModal(){
+    wx.showModal({
+      title: '你不是人',
+      content: '对不对',
+      success: function(res){
+        console.log(res)
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  handleShowLoading(){
+    wx.showLoading({
+      title: '等等吧',
+    })
+    setInterval(res => {
+      wx.hideLoading({
+      
+      })
+    },1000)
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  handleShowActionSheet(){
+    wx.showActionSheet({
+      itemList: ['相册','相机'],
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  onShareAppMessage(options){
+    return {
+      title: '梁海新',
+      path: '/pages/home/home',
+      imageUrl: 'https://t7.baidu.com/it/u=3616242789,1098670747&fm=79&app=86&size=h300&n=0&g=4n&f=jpeg?sec=1588148029&t=fb04555472694e6eba7fbf6939ba0266'
+    }
   },
+  
+  
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })
