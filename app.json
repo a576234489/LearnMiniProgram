@@ -4,5 +4,6 @@
     "pages/about/about",
     "pages/profile/profile",
     "pages/category/category"
-  ]
+  ],
+  "sitemapLocation": "sitemap65.json"
 }

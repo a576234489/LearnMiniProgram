@@ -1,3 +1,8 @@
 <!--home/home.wxml-->
 <text class="title">hellow world</text>
 <button>按钮</button>
+<!-- <navigator url="../about/about" open-type="redirect">跳转到关于页</navigator>
+<navigator url="../about/about" open-type="redirect">跳转到关于页</navigator> -->
+<navigator url="../about/about" open-type="redirect">跳转到关于页</navigator>
+<view>{{text}}</view> 
+<view>{{text}}</view>
